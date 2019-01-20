@@ -1,0 +1,4 @@
+//Instalando Mocha/chai
+yarn add mocha chai chai-http -D
+Criar pasta __tests__
+Adicionar script -> "test": "NODE_ENV=test mocha __tests__/**/*.test.js --exit",
