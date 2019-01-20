@@ -2,3 +2,15 @@
 yarn add mocha chai chai-http -D
 Criar pasta __tests__
 Adicionar script -> "test": "NODE_ENV=test mocha __tests__/**/*.test.js --exit",
+
+//Criando primeiro teste
+yarn add eslint-plugin-chai-friendly -D
+eslint.json :
+  "env": {
+    "mocha": true
+  },
+  "plugins": ["chai-friendly"],
+  "rules": {
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
+  }
