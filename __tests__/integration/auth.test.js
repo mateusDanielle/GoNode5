@@ -1,6 +1,14 @@
 const mongoose = require('mongoose')
 const chai = require('chai')
 const chaiHttp = require('chai-http')
+// const sinon = require('sinon')
+// const nodemailer = require('nodemailer')
+
+// const transport = {
+//   sendMail: sinon.spy()
+// }
+
+// sinon.stub(nodemailer, 'createTransport').returns(transport)
 
 const { expect } = chai
 
@@ -27,6 +35,7 @@ describe('Authentication', () => {
         .send(user)
 
       expect(response.body).to.have.property('user')
+      // expect(transport.sendMail.calledOnce).to.be.true
     })
 
     it('it should not be able to sign up with duplicates', async () => {

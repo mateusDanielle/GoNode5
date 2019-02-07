@@ -18,3 +18,6 @@ eslint.json :
 //factory-girl + faker
 yarn add factory-girl faker -D
 criar __tests__/factories
+
+//Mock & Stub para envio de e-mail
+yarn add sinon -D
