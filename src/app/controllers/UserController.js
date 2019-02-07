@@ -9,7 +9,7 @@ class UserController {
 
     const user = await User.create(req.body)
 
-    return res.json(user)
+    return res.json({ user: user })
   }
 }
 

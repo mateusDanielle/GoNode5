@@ -14,3 +14,7 @@ eslint.json :
     "no-unused-expressions": 0,
     "chai-friendly/no-unused-expressions": 2
   }
+
+//factory-girl + faker
+yarn add factory-girl faker -D
+criar __tests__/factories
