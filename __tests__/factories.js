@@ -15,5 +15,4 @@ factory.define('User', mongoose.model('User'), {
   email: factory.seq('User.email', n => `user_${n}@email.com`),
   password: faker.internet.password
 })
-
 module.exports = factory
